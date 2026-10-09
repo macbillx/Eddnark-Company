@@ -3,303 +3,168 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eddnark Company Limited | Equipment Rental, Manpower, Procurement and Engineering in Takoradi, Ghana</title>
+<meta name="theme-color" content="#0b2526">
+<meta name="description" content="Equipment rental, manpower supply, procurement, engineering and consultancy services for Ghana's oil and gas, mining, energy and construction industries. Based in Takoradi.">
+<title>Eddnark Company Limited | Equipment, Engineering & Procurement</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
-:root{--teal:#115e5e;--teal-d:#0b4343;--orange:#f26f36;--bg:#ffffff;--soft:#f2f5f4;--ink:#1c2b2b;--mute:#4d5f5f;--line:#d9e2e0;--on-teal:#ffffff;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a1a;--soft:#132424;--ink:#e8f0ee;--mute:#a6b9b6;--line:#23393a;--teal:#2a8a86}}
-:root[data-theme="dark"]{--bg:#0d1a1a;--soft:#132424;--ink:#e8f0ee;--mute:#a6b9b6;--line:#23393a;--teal:#2a8a86}
-html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif}
-h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;line-height:1.05;margin:0;font-weight:700;letter-spacing:.005em}
-h2{font-size:clamp(2.2rem,5vw,3.2rem);color:var(--teal);margin-bottom:1rem}
-h3{font-size:1.6rem;margin-bottom:.5rem}
-p{margin:0 0 1rem;max-width:68ch}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
-section{padding:5rem 0}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:68px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font:700 1.7rem "Barlow Condensed",sans-serif;color:var(--teal)}
-.brand small{font:400 .8rem Figtree,sans-serif;color:var(--mute);display:block;line-height:1}
-nav{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.95rem;font-weight:500}
-nav a{text-decoration:none;color:var(--mute);padding:.25rem 0}
-nav a:hover{color:var(--orange)}
-.btn{display:inline-block;background:var(--orange);color:#1c1008;font-weight:600;text-decoration:none;padding:.8rem 1.4rem;border-radius:4px;transition:all .2s ease}
-.btn:hover{background:#ff8550;transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(242,111,54,.35)}
-.btn.ghost{background:transparent;color:inherit;border:2px solid currentColor}
-.hero{background:var(--teal-d);color:var(--on-teal);padding:5rem 0 0;overflow:hidden;position:relative}
-.hero h1{font-size:clamp(3rem,9vw,6.2rem);max-width:13ch}
-.hero h1 span{color:var(--orange)}
-.hero p{font-size:1.2rem;color:#d3e6e3;margin:1.4rem 0 2rem}
-.hero .cta{display:flex;gap:.8rem;flex-wrap:wrap}
-.fleet{margin-top:4rem;background:var(--orange);color:#1c1008;padding:1.1rem 0}
-.fleet ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 2rem;font-weight:600}
-.fleet li::before{content:"\203A";margin-right:.5rem;font-weight:700}
-.sun{position:absolute;right:-60px;top:30px;width:min(440px,60vw);opacity:.16}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
-.quote{border-left:5px solid var(--orange);padding:.2rem 0 .2rem 1.2rem;font-size:1.25rem;color:var(--teal);font-weight:500;max-width:40ch}
-.alt{background:var(--soft)}
-.trust{padding-top:2rem}
-.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
-.trust-card{background:var(--bg);border:1px solid var(--line);border-top:5px solid var(--orange);padding:1.5rem;border-radius:8px;box-shadow:0 10px 30px -20px rgba(17,94,94,.24);transition:all .3s ease}
-.trust-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px -16px rgba(17,94,94,.32)}
-.trust-card h3{font-size:1.55rem;color:var(--teal)}
-.trust-card p{margin:0;color:var(--mute)}
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
-.svc>div{border-top:5px solid var(--teal);padding-top:1rem}
-.svc ul,.plain{margin:0;padding-left:1.1rem}
-.svc li,.plain li{margin:.3rem 0}
-.mv{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
-.mv>div{background:var(--teal-d);color:#fff;padding:2rem;border-radius:6px}
-.mv h3{color:var(--orange)}
-.mv p{margin:0;color:#d3e6e3}
-.comp{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem 3rem}
-.comp h3{font-size:1.35rem;color:var(--teal)}
-.comp p{margin:0;color:var(--mute)}
-#equipment .wrap>p{margin-bottom:2.5rem}
-.equipment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin-top:2rem}
-.equipment-card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:1.8rem;transition:all .35s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;cursor:pointer}
-.equipment-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--orange),var(--teal));opacity:0;transition:opacity .3s ease}
-.equipment-card:hover{transform:translateY(-8px);box-shadow:0 20px 50px -20px rgba(17,94,94,.25);border-color:var(--orange)}
-.equipment-card:hover::before{opacity:1}
-.equipment-card h3{font-size:1.3rem;color:var(--teal);margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
-.equipment-card h3::before{content:'⚙';font-size:1.6rem;color:var(--orange);opacity:.8}
-.equipment-card p{margin:0;color:var(--mute);font-size:.95rem;line-height:1.6}
-.tags{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;margin:0;padding:0}
-.tags li{border:1.5px solid var(--teal);color:var(--ink);padding:.45rem .95rem;border-radius:999px;font-weight:500}
-.team{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0;margin:0}
-.team li{background:var(--bg);border:1px solid var(--line);padding:.5rem 1rem;border-radius:4px}
-.works{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.works li{display:flex;justify-content:space-between;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.works b{color:var(--teal);font-weight:600}
-.clients{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.8rem;list-style:none;padding:0;margin:0}
-.clients li{background:var(--soft);padding:1rem 1.2rem;font:700 1.35rem "Barlow Condensed",sans-serif;color:var(--teal);border-radius:4px}
-.logos{margin:2rem 0 0;max-width:760px}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logos{background:#fff;border-radius:8px;padding:1.5rem}}
-:root[data-theme="dark"] .logos{background:#fff;border-radius:8px;padding:1.5rem}.logos img{display:block;width:100%;height:auto}
-.contact{background:var(--teal-d);color:#fff}
-.contact h2{color:#fff}
-.contact dl{display:grid;grid-template-columns:auto 1fr;gap:.7rem 1.5rem;margin:1.5rem 0 2rem}
-.contact dt{color:var(--orange);font-weight:600}
-.contact dd{margin:0}
-footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
-@media (max-width:820px){.two,.svc,.mv,.comp,.trust-grid{grid-template-columns:1fr}section{padding:3.5rem 0}nav{display:none}.equipment-grid{grid-template-columns:1fr}}
-@media (prefers-reduced-motion:no-preference){.hero h1,.hero p,.hero .cta{animation:rise .7s ease both}.hero p{animation-delay:.12s}.hero .cta{animation-delay:.24s}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}}
-.bar nav{flex-wrap:wrap}nav a[aria-current="page"]{color:var(--orange);font-weight:600}@media (max-width:820px){nav{display:flex;order:3;width:100%;overflow-x:auto;white-space:nowrap;gap:1.1rem;padding:.5rem 0}nav a{padding:.25rem 0}}.dd{position:relative;display:flex;align-items:center;gap:.3rem}.dd-c{font-size:.7rem;color:var(--mute)}
-.dd-m{display:none;position:absolute;top:100%;left:-.8rem;min-width:230px;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:6px;box-shadow:0 18px 40px -16px rgba(16,28,28,.22);padding:.5rem}.dd-m a{padding:.55rem .8rem;border-radius:4px}.dd-m a:hover{background:var(--soft)}
-.dd:hover .dd-m,.dd:focus-within .dd-m{display:flex}.dd.on>a{color:var(--orange);font-weight:600}
-.foot-cols{display:flex;gap:3rem;flex-wrap:wrap;margin-bottom:1.2rem}.foot-cols div{display:flex;flex-direction:column;gap:.35rem}.foot-cols b{color:#fff;margin-bottom:.2rem}
-@media (max-width:820px){.dd{gap:1.1rem}.dd-c{display:none}.dd-m{display:flex;position:static;flex-direction:row;border:0;box-shadow:none;background:none;padding:0;min-width:0;gap:1.1rem}.dd-m a{padding:0;margin:0}}
-
-.hs{display:flex;gap:.8rem;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--orange) transparent}.hs.drag{scroll-snap-type:none;cursor:grabbing}.hs>*{flex:0 0 auto;scroll-snap-align:start}
-.hs-w{position:relative}
-.hs-b{position:absolute;top:calc(50% - .45rem);transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:var(--orange);color:#1a0a03;font-size:1.6rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px -10px rgba(17,94,94,.5)}
-.hs-b.l{left:-14px}.hs-b.r{right:-14px}.hs-b:hover{background:#ff8550}.hs-b[hidden]{display:none}
-@media (pointer:coarse){.hs-b{display:none}}
-.fleet .hs{scrollbar-width:none;gap:0;padding:0;flex-wrap:nowrap}.fleet .hs::-webkit-scrollbar{display:none}
-.fleet .hs li{padding:.1rem 1.6rem .1rem 0;margin-right:1.6rem;font-size:1.15rem;border-right:2px solid rgba(26,10,3,.35);white-space:nowrap}.fleet .hs li:last-child{border:0;margin-right:0}
-.fleet .hs-b{background:#1a0a03;color:#fff}
-.tags.hs li{padding:.7rem 1.5rem;font-size:1.1rem;white-space:nowrap}
-.team.hs li{min-width:210px;padding:1.3rem 1.4rem;border-top:4px solid var(--teal);font:700 1.5rem/1.1 "Barlow Condensed",sans-serif}
-.hs-cards>div{flex:0 0 min(300px,80%);border-top:5px solid var(--teal);padding-top:1rem}
-.hs-logos{gap:1rem}.hs-logos .tile{flex:0 0 230px;height:150px;background:#fff;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:1.1rem}.hs-logos .tile img{display:block;max-width:100%;max-height:100%;object-fit:contain}.hs-cards h3{font-size:1.5rem;color:var(--teal)}.hs-cards p{margin:0;color:var(--mute)}
+:root{--ink:#172d2e;--muted:#5c7070;--teal:#0e6260;--deep:#0b2526;--deep2:#123638;--orange:#f47a42;--paper:#fff;--soft:#f3f7f6;--line:#dce6e4;--radius:18px;--shadow:0 18px 48px rgba(10,39,40,.10}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;color:var(--ink);background:var(--paper);font:400 16px/1.7 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}img{max-width:100%}button,a{-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px solid var(--orange);outline-offset:4px}.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--teal)}.eyebrow:before{content:"";width:25px;height:2px;background:var(--orange)}h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:Manrope,"DM Sans",sans-serif;letter-spacing:-.045em;line-height:1.12}h1{font-size:clamp(2.8rem,6.5vw,5.6rem);font-weight:800;max-width:780px;margin:22px 0}h1 span{color:#ff9a66}h2{font-size:clamp(2rem,4vw,3.4rem);font-weight:800;margin:15px 0 18px}h3{font-size:1.22rem;font-weight:800;margin-bottom:10px}p{color:var(--muted);margin-bottom:1rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 20px;border-radius:8px;background:var(--orange);color:#24150f;text-decoration:none;font-weight:800;border:1px solid transparent;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}.btn:hover{background:#ff905d;transform:translateY(-2px);box-shadow:0 10px 25px #f47a4230}.btn-light{background:#fff;color:var(--deep)}.btn-outline{border-color:#ffffff70;background:transparent;color:#fff}.btn-outline:hover{background:#ffffff12}.btn svg{width:18px;height:18px}
+.site-header{position:sticky;top:0;z-index:50;background:#ffffffed;backdrop-filter:blur(16px);border-bottom:1px solid #dce6e4cc}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--deep);font:800 1.12rem Manrope,sans-serif;letter-spacing:-.03em;line-height:1.1;white-space:nowrap}.brand-mark{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--deep);color:var(--orange)}.brand small{display:block;color:var(--muted);font:600 .67rem "DM Sans",sans-serif;letter-spacing:.13em;text-transform:uppercase;margin-top:4px}.nav-links{display:flex;align-items:center;gap:25px}.nav-links>a:not(.btn){text-decoration:none;color:#425b5b;font-weight:700;font-size:.9rem}.nav-links>a:not(.btn):hover{color:var(--teal)}.nav-links .btn{min-height:44px;padding:10px 15px}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-size:1.2rem;color:var(--deep)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 12%,#236365 0,transparent 38%),linear-gradient(120deg,var(--deep),#103536 70%,#164345);color:#fff;padding:92px 0 0}.hero:after{content:"";position:absolute;right:-130px;top:80px;width:480px;height:480px;border:1px solid #ffffff12;border-radius:50%;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05;pointer-events:none}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;padding-bottom:72px}.hero .eyebrow{color:#b8d8d4}.hero-copy>p{color:#d1e2df;font-size:1.12rem;max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-note{display:flex;align-items:center;gap:12px;margin-top:30px;color:#c4d8d6;font-size:.88rem}.hero-note strong{color:#fff}.status-dot{width:9px;height:9px;border-radius:50%;background:#7ed2a6;box-shadow:0 0 0 5px #7ed2a61c}.hero-panel{position:relative;z-index:2;border:1px solid #ffffff24;border-radius:24px;padding:26px;background:linear-gradient(145deg,#ffffff13,#ffffff05);box-shadow:0 30px 80px #00000020;backdrop-filter:blur(10px)}.panel-top{display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid #ffffff20;padding-bottom:18px;margin-bottom:18px}.panel-top span{font-size:.78rem;color:#c5d9d6}.panel-top b{font-size:.82rem;color:#fff}.panel-list{display:grid;gap:10px}.panel-item{display:flex;align-items:center;gap:13px;padding:13px;border-radius:12px;background:#ffffff0c}.panel-icon{width:43px;height:43px;flex:0 0 43px;display:grid;place-items:center;border-radius:10px;background:#f47a4220;color:#ff9a66;font-size:1.2rem}.panel-item strong{display:block;color:#fff;font-size:.94rem}.panel-item small{display:block;color:#c0d5d2;font-size:.78rem;margin-top:2px}.panel-foot{margin-top:16px;color:#c1d6d3;font-size:.78rem}.fleet{background:var(--orange);color:#2b1a12}.fleet-inner{display:flex;align-items:center;gap:25px;min-height:72px}.fleet-label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}.fleet-list{display:flex;flex-wrap:wrap;gap:8px 24px;padding:0;margin:0;list-style:none;font-weight:700;font-size:.88rem}.fleet-list li:before{content:"↗";margin-right:7px}
+section{padding:88px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.section-head>div{max-width:700px}.section-head>p{max-width:390px;margin-bottom:5px}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.trust-card{border:1px solid var(--line);border-radius:var(--radius);padding:26px;background:#fff}.trust-card .num{font:800 .78rem Manrope,sans-serif;color:var(--orange);letter-spacing:.12em}.trust-card h3{margin-top:20px}.trust-card p{margin:0;font-size:.94rem}.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.about-card{background:var(--soft);border-radius:24px;padding:34px;border:1px solid var(--line)}.about-card blockquote{border-left:4px solid var(--orange);padding:3px 0 3px 20px;margin:0 0 20px;font:700 1.25rem/1.5 Manrope,sans-serif;color:var(--deep)}.about-card p:last-child{margin-bottom:0}.services{background:var(--soft)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{padding:27px;background:#fff;border:1px solid var(--line);border-radius:var(--radius)}.service-card .panel-icon{margin-bottom:20px;background:#e7f1ef;color:var(--teal)}.service-card p{font-size:.93rem;margin-bottom:14px}.text-link{color:var(--teal);font-weight:800;text-decoration:none;font-size:.9rem}.text-link:hover{color:#b94b20}.equipment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.equipment-card{position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:220px;border:1px solid var(--line);border-radius:16px;padding:23px;background:linear-gradient(145deg,#fff,#f7faf9);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.equipment-card:hover{transform:translateY(-4px);border-color:#a9c9c4;box-shadow:var(--shadow)}.equipment-card .equipment-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:13px;background:#e8f2f0;color:var(--teal);font-size:1.35rem;margin-bottom:20px}.equipment-card p{font-size:.88rem;margin-bottom:0}.equipment-card .tag{margin-top:auto;padding-top:16px;font-size:.73rem;color:var(--teal);font-weight:800;text-transform:uppercase;letter-spacing:.08em}.equipment-cta{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:28px;padding:25px 28px;border-radius:16px;background:var(--deep);color:#fff}.equipment-cta h3{margin-bottom:5px}.equipment-cta p{color:#c4d8d6;margin:0;font-size:.9rem}.equipment-cta .btn{white-space:nowrap}.work-list{border-top:1px solid var(--line);list-style:none;padding:0;margin:0}.work-list li{display:flex;justify-content:space-between;gap:16px;padding:17px 0;border-bottom:1px solid var(--line)}.work-list strong{color:var(--deep)}.work-list span{color:var(--muted);text-align:right}.clients{background:var(--soft)}.client-strip{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.client-pill{background:#fff;border:1px solid var(--line);padding:13px 17px;border-radius:9px;font-weight:800;color:var(--teal);font-size:.9rem}.contact{background:var(--deep);color:#fff;position:relative;overflow:hidden}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:70px;align-items:start}.contact h2{color:#fff}.contact .eyebrow{color:#b9d6d2}.contact-intro>p{color:#c4d8d6;max-width:580px}.contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.contact-details{padding:28px;border:1px solid #ffffff25;background:#ffffff09;border-radius:18px}.contact-details h3{color:#fff;margin-bottom:20px}.detail-row{display:grid;grid-template-columns:95px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid #ffffff1c}.detail-row:last-child{border:0}.detail-row dt{color:#a9c8c4;font-size:.85rem}.detail-row dd{margin:0;color:#fff;font-weight:600;overflow-wrap:anywhere}.detail-row a{text-decoration:none}.detail-row a:hover{color:#ff9a66}.contact-note{font-size:.8rem;color:#a9c8c4;margin:20px 0 0}footer{background:#071c1d;color:#9eb9b6;padding:28px 0;font-size:.85rem}.footer-main{display:flex;align-items:center;justify-content:space-between;gap:24px}.footer-links{display:flex;flex-wrap:wrap;gap:20px}.footer-links a{color:#c2d4d2;text-decoration:none}.footer-links a:hover{color:#fff}.footer-bottom{border-top:1px solid #ffffff17;margin-top:22px;padding-top:18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-bottom p{color:#9eb9b6;margin:0;font-size:.8rem}
+@media(max-width:980px){.hero-grid{grid-template-columns:1fr;gap:36px}.hero-panel{max-width:650px}.equipment-grid{grid-template-columns:repeat(2,1fr)}.split,.contact-grid{gap:35px}.nav-links{gap:15px}.service-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.wrap{width:min(100% - 30px,1160px)}.nav{min-height:72px;gap:12px}.menu-toggle{display:block}.nav-links{display:none;order:3;width:100%;padding:0 0 16px;align-items:stretch;flex-direction:column;gap:4px}.nav-links.open{display:flex}.nav-links>a:not(.btn){padding:10px 2px}.nav-links .btn{align-self:flex-start}.nav{flex-wrap:wrap}.hero{padding-top:62px}.hero-grid{padding-bottom:52px}.hero-panel{padding:18px}.hero:after{right:-300px}.fleet-inner{align-items:flex-start;flex-direction:column;gap:10px;padding:17px 0}.fleet-list{gap:6px 15px}section{padding:62px 0}.section-head{display:block}.section-head>p{margin-top:12px}.trust-grid,.service-grid,.split,.contact-grid{grid-template-columns:1fr}.about-card{padding:25px}.equipment-grid{grid-template-columns:1fr 1fr;gap:10px}.equipment-card{padding:17px;min-height:210px}.equipment-card .equipment-icon{margin-bottom:15px}.equipment-cta{align-items:flex-start;flex-direction:column;padding:22px}.contact-grid{gap:30px}.detail-row{grid-template-columns:78px 1fr}.footer-main{align-items:flex-start;flex-direction:column}.footer-links{gap:14px}}
+@media(max-width:420px){h1{font-size:2.65rem}.equipment-grid{grid-template-columns:1fr}.equipment-card{min-height:0}.hero-actions .btn{width:100%}.contact-actions .btn{width:100%}.work-list li{display:block}.work-list span{display:block;text-align:left;margin-top:3px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 </style>
-<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#115e5e">
 </head>
 <body>
-<header>
-<div class="wrap bar">
-<a class="brand" href="index.html" aria-label="Eddnark Company Limited, home">
-<svg width="34" height="34" viewBox="-50 -50 100 100" aria-hidden="true"><g fill="#f26f36"><path id="p" d="M-7 -14L0 -46L9 -14Z"/><use href="#p" transform="rotate(45)"/><use href="#p" transform="rotate(90)"/><use href="#p" transform="rotate(135)"/><use href="#p" transform="rotate(180)"/><use href="#p" transform="rotate(225)"/><use href="#p" transform="rotate(270)"/><use href="#p" transform="rotate(315)"/></g></svg>
-<span>Eddnark<small>Company Limited</small></span></a>
-<nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><div class="dd"><a href="services.html">Services</a><span class="dd-c" aria-hidden="true">▾</span><div class="dd-m"><a href="procurement.html">Procurement</a><a href="equipment.html">Equipment</a><a href="safety.html">Safety</a></div></div><a href="our-works.html">Works</a><a href="#contact">Contact</a></nav>
-<a class="btn" href="#contact">Request a quote</a>
-</div>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Eddnark Company Limited home">
+      <span class="brand-mark" aria-hidden="true">E</span>
+      <span>Eddnark<small>Company Limited</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="our-works.html">Our works</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="#contact">Request a quote <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
 </header>
-
 <main id="top">
-<div class="hero">
-<svg class="sun" viewBox="-50 -50 100 100" aria-hidden="true"><g fill="#f26f36"><path id="q" d="M-7 -14L0 -46L9 -14Z"/><use href="#q" transform="rotate(45)"/><use href="#q" transform="rotate(90)"/><use href="#q" transform="rotate(135)"/><use href="#q" transform="rotate(180)"/><use href="#q" transform="rotate(225)"/><use href="#q" transform="rotate(270)"/><use href="#q" transform="rotate(315)"/></g></svg>
-<div class="wrap" style="position:relative">
-<h1>The right equipment for <span>the job.</span></h1>
-<p>Equipment rental, manpower supply, procurement, and engineering and consultancy services for the oil and gas, mining, energy and construction industries in Ghana. Based in Takoradi.</p>
-<div class="cta"><a class="btn" href="#contact">Request a quote</a><a class="btn ghost" href="#services">See our services</a></div>
-</div>
-<div class="fleet"><div class="wrap"><ul class="hs" aria-label="Equipment we rent"><li>Diesel generators</li><li>Air compressors</li><li>Breathing compressors</li><li>Tower lights</li><li>Nitrogen pumps</li><li>Booster pumps</li><li>Water pumps</li></ul></div></div>
-</div>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Industrial solutions · Takoradi, Ghana</span>
+        <h1>The right resources.<br><span>Ready when you are.</span></h1>
+        <p>Equipment rental, manpower supply, procurement, and engineering and consultancy services for the oil and gas, mining, energy and construction industries in Ghana.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Request a quote <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10h13m-5-5 5 5-5 5"/></svg></a>
+          <a class="btn btn-outline" href="#equipment">Explore our equipment</a>
+        </div>
+        <div class="hero-note"><span class="status-dot" aria-hidden="true"></span><span><strong>One dependable partner.</strong> Equipment, people and technical support.</span></div>
+      </div>
+      <aside class="hero-panel" aria-label="Our key services">
+        <div class="panel-top"><b>Solutions for demanding projects</b><span>Built around your scope</span></div>
+        <div class="panel-list">
+          <div class="panel-item"><span class="panel-icon" aria-hidden="true">⚙</span><span><strong>Plant &amp; equipment</strong><small>Power, air, lighting and pumping</small></span></div>
+          <div class="panel-item"><span class="panel-icon" aria-hidden="true">⌁</span><span><strong>Engineering &amp; maintenance</strong><small>Technical services and site support</small></span></div>
+          <div class="panel-item"><span class="panel-icon" aria-hidden="true">▤</span><span><strong>Procurement &amp; manpower</strong><small>Supply, coordination and people</small></span></div>
+        </div>
+        <div class="panel-foot">Serving oil and gas, mining, energy and construction.</div>
+      </aside>
+    </div>
+    <div class="fleet"><div class="wrap fleet-inner"><span class="fleet-label">Rental fleet</span><ul class="fleet-list" aria-label="Equipment available"><li>Diesel generators</li><li>Air compressors</li><li>Breathing compressors</li><li>Tower lights</li><li>Nitrogen pumps</li><li>Booster pumps</li><li>Water pumps</li></ul></div></div>
+  </section>
 
-<section class="trust" aria-label="Why choose Eddnark">
-<div class="wrap">
-<h2>Why clients choose Eddnark</h2>
-<div class="trust-grid">
-<article class="trust-card">
-<h3>Fast mobilization</h3>
-<p>We keep equipment and staffing ready to move so critical work can start without unnecessary delays.</p>
-</article>
-<article class="trust-card">
-<h3>Local industry knowledge</h3>
-<p>Our experience in Takoradi and Ghana's industrial sectors helps us match the right resources to the right project.</p>
-</article>
-<article class="trust-card">
-<h3>Safety and quality</h3>
-<p>Every solution is backed by practical safety procedures and a focus on dependable performance from day one.</p>
-</article>
-</div>
-</div>
-</section>
+  <section aria-label="Why choose Eddnark">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">Why Eddnark</span><h2>Reliable support from<br>mobilization to delivery.</h2></div><p>We bring equipment, technical capability and local industry knowledge together to help keep projects moving.</p></div>
+      <div class="trust-grid">
+        <article class="trust-card"><span class="num">01 / READY</span><h3>Fast mobilization</h3><p>We work to have equipment and staffing ready to move so critical work can start without unnecessary delays.</p></article>
+        <article class="trust-card"><span class="num">02 / LOCAL</span><h3>Industry knowledge</h3><p>Our experience in Takoradi and Ghana's industrial sectors helps match resources to each project's needs.</p></article>
+        <article class="trust-card"><span class="num">03 / RESPONSIBLE</span><h3>Safety and quality</h3><p>Practical safety procedures and a focus on dependable performance support the work we deliver.</p></article>
+      </div>
+    </div>
+  </section>
 
-<section id="about">
-<div class="wrap two">
-<div>
-<h2>One vendor instead of many</h2>
-<p>Eddnark Company Limited was registered in August 2017 as a service provider, set up to deliver quality solutions to specification. We are in the heart of Takoradi, in Ghana's Western Region.</p>
-<p>Clients often lose time sourcing equipment from several vendors, and dealing with providers who fall short on reliability and quality. We keep a wide inventory under one roof, so you negotiate once and receive dependable support throughout the job.</p>
-<p>Our management team has direct industry knowledge and research experience. We employ local people and contribute to the development of the area.</p>
-</div>
-<div>
-<p class="quote">We have built loyalty with customers at the expense of short-term gain, and aim to be the preferred logistics choice in our target sectors.</p>
-<p style="margin-top:1.5rem">With oil discovered in commercial quantities off the coast of Ghana, we are growing into a major player. Our young, energetic leadership supplies quality personal professionalism, technical excellence and inventive thinking to every project we handle.</p>
-</div>
-</div>
-</section>
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">What we do</span><h2>Multiple capabilities.<br>One coordinated partner.</h2></div><p>Supporting construction, mining, energy, and oil and gas operations throughout Ghana.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><span class="panel-icon" aria-hidden="true">⚙</span><h3>Engineering, construction &amp; technical</h3><p>Technical capability for project delivery, quality checks and site requirements.</p><a class="text-link" href="services.html">Explore engineering services ↗</a></article>
+        <article class="service-card"><span class="panel-icon" aria-hidden="true">▤</span><h3>Procurement &amp; consultancy</h3><p>Procurement, document control, supply chain coordination and consultancy.</p><a class="text-link" href="procurement.html">Explore procurement ↗</a></article>
+        <article class="service-card"><span class="panel-icon" aria-hidden="true">⌘</span><h3>IT, multimedia &amp; support</h3><p>Hardware, networking, IT support and multimedia services for business needs.</p><a class="text-link" href="services.html">View our services ↗</a></article>
+      </div>
+      <div style="margin-top:28px"><span class="eyebrow">Additional capabilities</span><p style="margin-top:12px">Civil construction · Calibration and testing · Metrology training · Blasting and coating · Fabric maintenance · Maintenance works · Local manpower · General procurement</p></div>
+    </div>
+  </section>
 
-<section class="alt" aria-label="Vision and mission">
-<div class="wrap mv">
-<div><h3>Our vision</h3><p>To be a reliable service provider of equipment rental, logistics services, and engineering and consultancy services in Ghana's oil and gas industry, mining sector and construction sector.</p></div>
-<div><h3>Our mission</h3><p>To be seen as the premier provider in the country of equipment and material supply, manpower supply, general procurement, and engineering and consultancy services.</p></div>
-</div>
-</section>
+  <section id="equipment">
+    <div class="wrap">
+      <div class="section-head"><div><span class="eyebrow">Plant &amp; equipment</span><h2>Equipment for the work<br>that matters.</h2></div><p>Our rental fleet covers power, air, lighting and pumping for onshore and yard work. Tell us your scope and we'll discuss the right fit.</p></div>
+      <div class="equipment-grid">
+        <article class="equipment-card"><span class="equipment-icon" aria-hidden="true">ϟ</span><h3>Diesel generators</h3><p>Power solutions from portable units to industrial-capacity generators for continuous operations.</p><span class="tag">Power</span></article>
+        <article class="equipment-card"><span class="equipment-icon" aria-hidden="true">◉</span><h3>Air compressors</h3><p>Compression systems for pneumatic operations, construction work and industrial applications.</p><span class="tag">Air systems</span></article>
+        <article class="equipment-card"><span class="equipment-icon" aria-hidden="true">＋</span><h3>Breathing compressors</h3><p>Specialized breathing-air systems for work requiring attention to air quality and safety.</p><span class="tag">Breathing air</span></article>
+        <article class="equipment-card"><span class="equipment-icon" aria-hidden="true">☼</span><h3>Tower lights</h3><p>Mobile lighting solutions for night operations, outdoor sites and construction work.</p><span class="tag">Lighting</span></article>
+        <article class="equipment-card"><span class="equipment-icon" aria-hidden="true">↗</span><h3>Nitrogen pumps</h3><p>Nitrogen delivery systems for industrial applications, pressure testing and specialized operations.</p><span class="tag">Pumping</span></article>
+        <article class="equipment-card"><span class="equipment-icon" aria-hidden="true">⇧</span><h3>Booster pumps</h3><p>High-capacity pumping for water circulation, pressure boosting and fluid transfer.</p><span class="tag">Pumping</span></article>
+        <article class="equipment-card"><span class="equipment-icon" aria-hidden="true">⇄</span><h3>Wilden pumps</h3><p>Air-operated double diaphragm pumps for demanding industrial fluid-handling applications.</p><span class="tag">Fluid handling</span></article>
+        <article class="equipment-card"><span class="equipment-icon" aria-hidden="true">≈</span><h3>Water pumps</h3><p>Pumping solutions for dewatering, circulation and water supply across project types.</p><span class="tag">Water systems</span></article>
+      </div>
+      <div class="equipment-cta"><div><h3>Have a specific equipment list?</h3><p>Share your scope, location and timing to discuss availability and requirements.</p></div><a class="btn" href="mailto:operations@eddnarkgh.com?subject=Equipment%20rental%20enquiry">Enquire about equipment ↗</a></div>
+    </div>
+  </section>
 
-<section id="services">
-<div class="wrap">
-<h2>What we do</h2>
-<p>We serve the construction, mining, energy, and oil and gas industries in Ghana, in three core areas.</p>
-<div class="svc" style="margin:2rem 0 3.5rem">
-<div><h3>Engineering, construction and technical</h3><ul><li>Engineering services</li><li>Civil construction</li><li>Calibration and testing</li><li>Metrology training and consultancy</li></ul></div>
-<div><h3>Procurement, documentation and consultancy</h3><ul><li>Procurement services</li><li>Document control and consultancy</li></ul></div>
-<div><h3>IT and multimedia</h3><ul><li>Hardware and networking</li><li>IT support services</li><li>Multimedia</li></ul></div>
-</div>
-<h3 style="font-size:2rem;color:var(--teal);margin-bottom:1.2rem">Alongside our core work</h3>
-<div class="comp">
-<div><h3>Right equipment, right budget</h3><p>We match the equipment to the job within the budget you set.</p></div>
-<div><h3>Procurement</h3><p>Timely sourcing and delivery of high-quality materials and equipment.</p></div>
-<div><h3>Blasting and coating</h3><p>Professional blasting and coating, done with precision and built to last.</p></div>
-<div><h3>Maintenance works</h3><p>Reliable, efficient maintenance solutions tailored to each client.</p></div>
-<div><h3>Customer service</h3><p>The highest service quality, and a commitment to exceeding expectations.</p></div>
-<div><h3>Local employment</h3><p>We keep hiring, to strengthen our delivery chain and create jobs in the communities we serve.</p></div>
-</div>
-</div>
-</section>
+  <section class="services" id="about">
+    <div class="wrap split">
+      <div><span class="eyebrow">About Eddnark</span><h2>One vendor instead<br>of many.</h2><p>Eddnark Company Limited was registered in August 2017 as a service provider, set up to deliver quality solutions to specification. We are based in Takoradi, in Ghana's Western Region.</p><p>Clients can lose time coordinating several vendors. Our broad service offering is designed to simplify sourcing and provide dependable support throughout the job.</p><p>Our management team brings industry knowledge and research experience. We employ local people and contribute to the development of the area.</p><a class="text-link" href="about.html">Learn more about Eddnark ↗</a></div>
+      <div class="about-card"><blockquote>“We have built loyalty with customers at the expense of short-term gain, and aim to be the preferred logistics choice in our target sectors.”</blockquote><p>Our vision is to be a reliable provider of equipment rental, logistics, engineering and consultancy services for Ghana's oil and gas, mining and construction sectors.</p><p>Our mission is to provide equipment and materials, manpower, general procurement, and engineering and consultancy services.</p></div>
+    </div>
+  </section>
 
-<section><div class="wrap"><h2>Procurement, supply chain and fabric maintenance</h2><div class="svc" style="grid-template-columns:repeat(2,1fr)"><a class="tl" href="procurement.html"><h3>Procurement and supply chain</h3><p>Efficient sourcing, supply, and flow management for industrial operations.</p></a><a class="tl" href="fabric-maintenance.html"><h3>Fabric maintenance</h3><p>Maintenance solutions that keep your equipment performing at peak reliability.</p></a></div></div></section>
+  <section id="expertise">
+    <div class="wrap split">
+      <div><span class="eyebrow">Technical expertise</span><h2>Experience across<br>the project lifecycle.</h2><p>Our technical people cover the chain from surface preparation to inspection and training.</p></div>
+      <div><ul class="work-list"><li><strong>Project supervision</strong><span>Site coordination</span></li><li><strong>Coating inspection</strong><span>Quality assurance</span></li><li><strong>Corrosion mapping</strong><span>Inspection support</span></li><li><strong>Surface preparation</strong><span>Preparation expertise</span></li><li><strong>Coating application</strong><span>Industrial coating</span></li><li><strong>Industrial training</strong><span>Instruction and QA</span></li></ul></div>
+    </div>
+  </section>
 
-<section id="equipment" class="alt">
-<div class="wrap">
-<h2>Plant and equipment</h2>
-<p>Our rental fleet covers power, air, lighting and pumping for onshore and yard work. Browse our comprehensive range of quality equipment, all maintained to the highest standards.</p>
-<div class="equipment-grid">
-<article class="equipment-card">
-<h3>Diesel generators</h3>
-<p>Reliable power solutions ranging from small portable units to large industrial capacity generators for continuous operations.</p>
-</article>
-<article class="equipment-card">
-<h3>Air compressors</h3>
-<p>High-performance air compression systems for pneumatic operations, construction work, and industrial applications.</p>
-</article>
-<article class="equipment-card">
-<h3>Breathing compressor</h3>
-<p>Specialized compressors for breathing air systems, meeting strict quality and safety standards for confined spaces.</p>
-</article>
-<article class="equipment-card">
-<h3>Tower lights</h3>
-<p>Powerful mobile lighting solutions for night operations, outdoor sites, and construction work requiring high-intensity illumination.</p>
-</article>
-<article class="equipment-card">
-<h3>Nitrogen pumps</h3>
-<p>Precision nitrogen delivery systems for industrial applications, pressure testing, and specialized gas operations.</p>
-</article>
-<article class="equipment-card">
-<h3>Booster pumps</h3>
-<p>High-capacity pumping solutions for water circulation, pressure boosting, and fluid transfer operations on large-scale projects.</p>
-</article>
-<article class="equipment-card">
-<h3>Wilden pumps</h3>
-<p>Durable air-operated double diaphragm pumps ideal for abrasive and corrosive fluid handling in industrial environments.</p>
-</article>
-<article class="equipment-card">
-<h3>Water pumps</h3>
-<p>Complete water pumping solutions for dewatering, circulation, and supply applications across all project types.</p>
-</article>
-</div>
-</div>
-</section>
+  <section class="services" id="work">
+    <div class="wrap split">
+      <div><span class="eyebrow">Selected work</span><h2>Practical support<br>on real projects.</h2><p>Examples of work recorded by Eddnark across equipment supply and rental.</p><a class="text-link" href="our-works.html">See our works ↗</a></div>
+      <ul class="work-list"><li><strong>Compressor rental</strong><span>Saipem · two units</span></li><li><strong>50 kVA genset</strong><span>Diesel generator supply</span></li><li><strong>BA compressor</strong><span>MV 21 FPSO</span></li><li><strong>425 CFM compressor</strong><span>DCS yard</span></li><li><strong>425 CFM compressor</strong><span>Southey yard</span></li></ul>
+    </div>
+  </section>
 
-<section id="expertise">
-<div class="wrap two">
-<div>
-<h2>Area of expertise</h2>
-<p>Our technical people cover the full chain from surface preparation to inspection and training.</p>
-</div>
-<ul class="plain" style="columns:2;column-gap:2rem">
-<li>Project supervision</li><li>Coating inspector</li><li>Team manager</li><li>Corrosion mapping</li><li>Surface preparation expert</li><li>Coating application</li><li>Industrial coating instruction</li><li>Inspection and QA</li>
-</ul>
-</div>
-<div class="wrap" style="margin-top:3rem">
-<h3 style="color:var(--teal)">Our team</h3>
-<ul class="team hs" aria-label="Our team" style="margin-top:.8rem"><li>CEO</li><li>Managing director</li><li>Operations manager</li><li>Procurement and logistics lead</li><li>Project engineer</li><li>Site supervisors</li></ul>
-</div>
-</section>
+  <section class="clients" id="clients">
+    <div class="wrap"><span class="eyebrow">Relationships built on delivery</span><h2>Industry experience.<br>Local commitment.</h2><p>We have worked across the country, with a focus on dependable service and mobilization.</p>
+      <div class="client-strip" aria-label="Companies Eddnark has worked with"><span class="client-pill">Zeal Environmental Technologies</span><span class="client-pill">Ghana Navy</span><span class="client-pill">Saipem</span></div>
+    </div>
+  </section>
 
-<section id="safety" class="alt">
-<div class="wrap two">
-<div><h2>Safety is everyone's responsibility</h2></div>
-<div>
-<p>We have built a safety culture our employees understand. We pledge to protect our workforce, the environment, company resources and every client we work for.</p>
-<p>Comprehensive safety procedures protect clients, employees and the environment. Risk assessment and risk controls are part of our day-to-day activities, and we comply with the safety standards expected by our clients and regulators.</p>
-</div>
-</div>
-</section>
-
-<section id="work">
-<div class="wrap">
-<h2>Some notable work</h2>
-<ul class="works">
-<li><b>Compressor rental</b><span>Saipem (two units)</span></li>
-<li><b>50 kVA genset</b><span>Diesel generator supply</span></li>
-<li><b>BA compressor</b><span>MV 21 FPSO</span></li>
-<li><b>425 CFM compressor</b><span>DCS yard</span></li>
-<li><b>425 CFM compressor</b><span>Southey yard</span></li>
-</ul>
-</div>
-</section>
-
-<section id="clients" class="alt">
-<div class="wrap">
-<h2>Companies we work with</h2>
-<p>We have worked across the country, so mobilization is not a problem for us.</p>
-<div class="hs hs-logos" aria-label="Companies we have worked with"><div class="tile"><img src="assets/clients/zeal.png" alt="Zeal Environmental Technologies" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/ghana-navy.png" alt="Ghana Navy" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/saipem.png" alt="Saipem" loading="lazy" draggable="false"></div></div>
-</div>
-</section>
-
-<section id="contact" class="contact">
-<div class="wrap">
-<h2>Tell us what the job needs</h2>
-<p>Send us your equipment list or scope of work and we will come back with a quote.</p>
-<dl>
-<dt>Phone</dt><dd><a href="tel:+233596641418">+233 59 664 1418</a></dd>
-<dt>Email</dt><dd><a href="mailto:operations@eddnarkgh.com">operations@eddnarkgh.com</a></dd>
-<dt>Office</dt><dd>Sam Street PT 5 Mount Zion, Anaji-Takoradi</dd>
-<dt>Post</dt><dd>P.O. Box MC 1588, Market Circle</dd>
-</dl>
-<a class="btn" href="mailto:operations@eddnarkgh.com?subject=Quote%20request">Email a quote request</a>
-</div>
-</section>
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-intro"><span class="eyebrow">Start a conversation</span><h2>Tell us what<br>the job needs.</h2><p>Send us your equipment list or scope of work and our team will come back to you to discuss a quote. Include the location, timing and key requirements to help us understand the job.</p><div class="contact-actions"><a class="btn" href="mailto:operations@eddnarkgh.com?subject=Quote%20request">Request a quote ↗</a><a class="btn btn-outline" href="tel:+233596641418">Call our team</a></div></div>
+      <div class="contact-details"><h3>Contact information</h3><dl>
+        <div class="detail-row"><dt>Phone</dt><dd><a href="tel:+233596641418">+233 59 664 1418</a></dd></div>
+        <div class="detail-row"><dt>Email</dt><dd><a href="mailto:operations@eddnarkgh.com">operations@eddnarkgh.com</a></dd></div>
+        <div class="detail-row"><dt>Office</dt><dd>Sam Street PT 5 Mount Zion, Anaji-Takoradi</dd></div>
+        <div class="detail-row"><dt>Postal</dt><dd>P.O. Box MC 1588, Market Circle</dd></div>
+      </dl><p class="contact-note">Based in Takoradi, Ghana's Western Region.</p></div>
+    </div>
+  </section>
 </main>
-<footer><div class="wrap"><div class="foot-cols"><div><b>Company</b><a href="index.html">Home</a><a href="about.html">About</a><a href="safety.html">Safety</a><a href="our-works.html">Our Works</a></div><div><b>Services</b><a href="services.html">Engineering</a><a href="procurement.html">Procurement</a><a href="equipment.html">Plant &amp; Equipment</a></div><div><b>Contact</b><a href="tel:+233596641418">+233 59 664 1418</a><a href="mailto:operations@eddnarkgh.com">operations@eddnarkgh.com</a></div></div><p>© 2025 Eddnark Company Limited. All rights reserved.</p></div></footer>
-<script src="site.js" defer></script></body>
+<footer>
+  <div class="wrap"><div class="footer-main"><a class="brand" href="index.html" style="color:#fff"><span class="brand-mark">E</span><span>Eddnark<small style="color:#9eb9b6">Company Limited</small></span></a><nav class="footer-links" aria-label="Footer navigation"><a href="about.html">About</a><a href="services.html">Services</a><a href="procurement.html">Procurement</a><a href="equipment.html">Equipment</a><a href="safety.html">Safety</a><a href="our-works.html">Our works</a></nav></div><div class="footer-bottom"><p>© 2025 Eddnark Company Limited. All rights reserved.</p><p>Equipment · Engineering · Procurement · Manpower</p></div></div>
+</footer>
+<script>
+(function(){
+  var toggle=document.querySelector('.menu-toggle');
+  var nav=document.querySelector('.nav-links');
+  if(toggle&&nav){
+    toggle.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded',String(open));
+      toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+      toggle.textContent=open?'×':'☰';
+    });
+    nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation');toggle.textContent='☰';});});
+  }
+})();
+</script>
+</body>
 </html>

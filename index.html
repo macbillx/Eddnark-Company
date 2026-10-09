@@ -44,6 +44,11 @@ nav a:hover{color:var(--orange)}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
 .quote{border-left:5px solid var(--orange);padding:.2rem 0 .2rem 1.2rem;font-size:1.25rem;color:var(--teal);font-weight:500;max-width:40ch}
 .alt{background:var(--soft)}
+.trust{padding-top:2rem}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2rem}
+.trust-card{background:var(--bg);border:1px solid var(--line);border-top:5px solid var(--orange);padding:1.5rem;border-radius:8px;box-shadow:0 10px 30px -20px rgba(17,94,94,.24)}
+.trust-card h3{font-size:1.55rem;color:var(--teal)}
+.trust-card p{margin:0;color:var(--mute)}
 .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .svc>div{border-top:5px solid var(--teal);padding-top:1rem}
 .svc ul,.plain{margin:0;padding-left:1.1rem}
@@ -73,20 +78,17 @@ nav a:hover{color:var(--orange)}
 .contact dt{color:var(--orange);font-weight:600}
 .contact dd{margin:0}
 footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
-@media (max-width:820px){.two,.svc,.mv,.comp{grid-template-columns:1fr}section{padding:3.5rem 0}nav{display:none}}
-@media (prefers-reduced-motion:no-preference){.hero h1,.hero p,.hero .cta{animation:rise .7s ease both}.hero p{animation-delay:.12s}.hero .cta{animation-delay:.24s}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}}
-.bar nav{flex-wrap:wrap}nav a[aria-current="page"]{color:var(--orange);font-weight:600}@media (max-width:820px){nav{display:flex;order:3;width:100%;overflow-x:auto;white-space:nowrap;gap:1.1rem;padding-bottom:.6rem}}.tl{display:block;text-decoration:none;border:1.5px solid var(--teal);padding:1.4rem;border-radius:4px}.tl h3{color:var(--teal);margin-bottom:.4rem}.tl p{margin:0;color:var(--mute)}.tl span{color:var(--orange);font-weight:600}@media (max-width:820px){.svc[style]{grid-template-columns:1fr!important}}
-.dd{position:relative;display:flex;align-items:center;gap:.3rem}.dd-c{font-size:.7rem;color:var(--mute)}
-.dd-m{display:none;position:absolute;top:100%;left:-.8rem;min-width:230px;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:6px;box-shadow:0 18px 40px -16px rgba(0,0,0,.35);padding:.5rem;z-index:30}
-.dd-m a{padding:.55rem .8rem;border-radius:4px}.dd-m a:hover{background:var(--soft)}
+@media (max-width:820px){.two,.svc,.mv,.comp,.trust-grid{grid-template-columns:1fr}section{padding:3.5rem 0}nav{display:none}}
+@media (prefers-reduced-motion:no-preference){.hero h1,.hero p,.hero .cta{animation:rise .7s ease both}.hero p{animation-delay:.12s}.hero .cta{animation-delay:.24s}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}}
+.bar nav{flex-wrap:wrap}nav a[aria-current="page"]{color:var(--orange);font-weight:600}@media (max-width:820px){nav{display:flex;order:3;width:100%;overflow-x:auto;white-space:nowrap;gap:1.1rem;padding:.5rem 0}nav a{padding:.25rem 0}}.dd{position:relative;display:flex;align-items:center;gap:.3rem}.dd-c{font-size:.7rem;color:var(--mute)}
+.dd-m{display:none;position:absolute;top:100%;left:-.8rem;min-width:230px;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:6px;box-shadow:0 18px 40px -16px rgba(16,28,28,.22);padding:.5rem}.dd-m a{padding:.55rem .8rem;border-radius:4px}.dd-m a:hover{background:var(--soft)}
 .dd:hover .dd-m,.dd:focus-within .dd-m{display:flex}.dd.on>a{color:var(--orange);font-weight:600}
 .foot-cols{display:flex;gap:3rem;flex-wrap:wrap;margin-bottom:1.2rem}.foot-cols div{display:flex;flex-direction:column;gap:.35rem}.foot-cols b{color:#fff;margin-bottom:.2rem}
-@media (max-width:820px){.dd{gap:1.1rem}.dd-c{display:none}.dd-m{display:flex;position:static;flex-direction:row;border:0;box-shadow:none;background:none;padding:0;min-width:0;gap:1.1rem}.dd-m a{padding:.25rem 0}.dd-m a:hover{background:none}.foot-cols{gap:1.8rem}}
+@media (max-width:820px){.dd{gap:1.1rem}.dd-c{display:none}.dd-m{display:flex;position:static;flex-direction:row;border:0;box-shadow:none;background:none;padding:0;min-width:0;gap:1.1rem}.dd-m a{padding:0;margin:0}}
 
-.hs{display:flex;gap:.8rem;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--orange) transparent;padding:.2rem 0 .9rem;margin:0;list-style:none;cursor:grab;user-select:none}
-.hs.drag{scroll-snap-type:none;cursor:grabbing}.hs>*{flex:0 0 auto;scroll-snap-align:start}
+.hs{display:flex;gap:.8rem;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--orange) transparent}.hs.drag{scroll-snap-type:none;cursor:grabbing}.hs>*{flex:0 0 auto;scroll-snap-align:start}
 .hs-w{position:relative}
-.hs-b{position:absolute;top:calc(50% - .45rem);transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:var(--orange);color:#1a0a03;font-size:1.6rem;line-height:1;cursor:pointer;box-shadow:0 8px 20px -6px rgba(0,0,0,.45);z-index:2}
+.hs-b{position:absolute;top:calc(50% - .45rem);transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:var(--orange);color:#1a0a03;font-size:1.6rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px -10px rgba(17,94,94,.5)}
 .hs-b.l{left:-14px}.hs-b.r{right:-14px}.hs-b:hover{background:#ff8550}.hs-b[hidden]{display:none}
 @media (pointer:coarse){.hs-b{display:none}}
 .fleet .hs{scrollbar-width:none;gap:0;padding:0;flex-wrap:nowrap}.fleet .hs::-webkit-scrollbar{display:none}
@@ -95,17 +97,17 @@ footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
 .tags.hs li{padding:.7rem 1.5rem;font-size:1.1rem;white-space:nowrap}
 .team.hs li{min-width:210px;padding:1.3rem 1.4rem;border-top:4px solid var(--teal);font:700 1.5rem/1.1 "Barlow Condensed",sans-serif}
 .hs-cards>div{flex:0 0 min(300px,80%);border-top:5px solid var(--teal);padding-top:1rem}
-.hs-logos{gap:1rem}.hs-logos .tile{flex:0 0 230px;height:150px;background:#fff;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:1.1rem 1.3rem}.hs-logos .tile img{max-width:100%;max-height:100%;object-fit:contain;pointer-events:none}
-.hs-cards h3{font-size:1.5rem;color:var(--teal)}.hs-cards p{margin:0;color:var(--mute)}
+.hs-logos{gap:1rem}.hs-logos .tile{flex:0 0 230px;height:150px;background:#fff;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:1.1rem}.hs-logos .tile img{display:block;max-width:100%;max-height:100%;object-fit:contain}.hs-cards h3{font-size:1.5rem;color:var(--teal)}.hs-cards p{margin:0;color:var(--mute)}
 </style>
-<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#0b4343"></head>
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="theme-color" content="#115e5e">
+</head>
 <body>
 <header>
 <div class="wrap bar">
 <a class="brand" href="index.html" aria-label="Eddnark Company Limited, home">
 <svg width="34" height="34" viewBox="-50 -50 100 100" aria-hidden="true"><g fill="#f26f36"><path id="p" d="M-7 -14L0 -46L9 -14Z"/><use href="#p" transform="rotate(45)"/><use href="#p" transform="rotate(90)"/><use href="#p" transform="rotate(135)"/><use href="#p" transform="rotate(180)"/><use href="#p" transform="rotate(225)"/><use href="#p" transform="rotate(270)"/><use href="#p" transform="rotate(315)"/></g></svg>
 <span>Eddnark<small>Company Limited</small></span></a>
-<nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><div class="dd"><a href="services.html">Services</a><span class="dd-c" aria-hidden="true">&#9662;</span><div class="dd-m"><a href="procurement.html">Procurement</a><a href="fabric-maintenance.html">Fabric Maintenance</a><a href="equipment.html">Equipment</a></div></div><a href="safety.html">Safety</a><a href="our-works.html">Our Works</a><a href="index.html#contact">Contact</a></nav>
+<nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><div class="dd"><a href="services.html">Services</a><span class="dd-c" aria-hidden="true">▾</span><div class="dd-m"><a href="procurement.html">Procurement</a><a href="equipment.html">Equipment</a><a href="safety.html">Safety</a></div></div><a href="our-works.html">Works</a><a href="#contact">Contact</a></nav>
 <a class="btn" href="#contact">Request a quote</a>
 </div>
 </header>
@@ -118,27 +120,47 @@ footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
 <p>Equipment rental, manpower supply, procurement, and engineering and consultancy services for the oil and gas, mining, energy and construction industries in Ghana. Based in Takoradi.</p>
 <div class="cta"><a class="btn" href="#contact">Request a quote</a><a class="btn ghost" href="#services">See our services</a></div>
 </div>
-<div class="fleet"><div class="wrap"><ul class="hs" aria-label="Equipment we rent"><li>Diesel generators</li><li>Air compressors</li><li>Breathing compressors</li><li>Tower lights</li><li>Nitrogen pumps</li><li>Booster pumps</li><li>Wilden pumps</li></ul></div></div>
+<div class="fleet"><div class="wrap"><ul class="hs" aria-label="Equipment we rent"><li>Diesel generators</li><li>Air compressors</li><li>Breathing compressors</li><li>Tower lights</li><li>Nitrogen pumps</li><li>Booster pumps</li><li>Water pumps</li></ul></div></div>
 </div>
+
+<section class="trust" aria-label="Why choose Eddnark">
+<div class="wrap">
+<h2>Why clients choose Eddnark</h2>
+<div class="trust-grid">
+<article class="trust-card">
+<h3>Fast mobilization</h3>
+<p>We keep equipment and staffing ready to move so critical work can start without unnecessary delays.</p>
+</article>
+<article class="trust-card">
+<h3>Local industry knowledge</h3>
+<p>Our experience in Takoradi and Ghana’s industrial sectors helps us match the right resources to the right project.</p>
+</article>
+<article class="trust-card">
+<h3>Safety and quality</h3>
+<p>Every solution is backed by practical safety procedures and a focus on dependable performance from day one.</p>
+</article>
+</div>
+</div>
+</section>
 
 <section id="about">
 <div class="wrap two">
 <div>
 <h2>One vendor instead of many</h2>
 <p>Eddnark Company Limited was registered in August 2017 as a service provider, set up to deliver quality solutions to specification. We are in the heart of Takoradi, in Ghana's Western Region.</p>
-<p>Clients often lose time sourcing equipment from several vendors, and dealing with providers who fall short on reliability and quality. We keep a wide inventory under one roof, so you negotiate and transact with one party.</p>
+<p>Clients often lose time sourcing equipment from several vendors, and dealing with providers who fall short on reliability and quality. We keep a wide inventory under one roof, so you negotiate once and receive dependable support throughout the job.</p>
 <p>Our management team has direct industry knowledge and research experience. We employ local people and contribute to the development of the area.</p>
 </div>
 <div>
 <p class="quote">We have built loyalty with customers at the expense of short-term gain, and aim to be the preferred logistics choice in our target sectors.</p>
-<p style="margin-top:1.5rem">With oil discovered in commercial quantities off the coast of Ghana, we are growing into a major player. Our young, energetic leadership supplies quality personal protective equipment (PPE), general logistics support and rental services, backed by deep oil and gas knowledge.</p>
+<p style="margin-top:1.5rem">With oil discovered in commercial quantities off the coast of Ghana, we are growing into a major player. Our young, energetic leadership supplies quality personal professionalism, technical excellence and inventive thinking to every project we handle.</p>
 </div>
 </div>
 </section>
 
 <section class="alt" aria-label="Vision and mission">
 <div class="wrap mv">
-<div><h3>Our vision</h3><p>To be a reliable service provider of equipment rental, logistics services, and engineering and consultancy services in Ghana's oil and gas industry, mining sector and construction industry.</p></div>
+<div><h3>Our vision</h3><p>To be a reliable service provider of equipment rental, logistics services, and engineering and consultancy services in Ghana's oil and gas industry, mining sector and construction sector.</p></div>
 <div><h3>Our mission</h3><p>To be seen as the premier provider in the country of equipment and material supply, manpower supply, general procurement, and engineering and consultancy services.</p></div>
 </div>
 </section>
@@ -164,7 +186,8 @@ footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
 </div>
 </section>
 
-<section><div class="wrap"><h2>Procurement, supply chain and fabric maintenance</h2><div class="svc" style="grid-template-columns:repeat(2,1fr)"><a class="tl" href="procurement.html"><h3>Procurement and supply chain</h3><p>Sourcing, purchasing, logistics support and delivery of materials and equipment.</p><span>Read more &rarr;</span></a><a class="tl" href="fabric-maintenance.html"><h3>Fabric maintenance</h3><p>Corrosion mapping, surface preparation, blasting, coating and maintenance works.</p><span>Read more &rarr;</span></a></div></div></section>
+<section><div class="wrap"><h2>Procurement, supply chain and fabric maintenance</h2><div class="svc" style="grid-template-columns:repeat(2,1fr)"><a class="tl" href="procurement.html"><h3>Procurement and supply chain</h3><p>Efficient sourcing, supply, and flow management for industrial operations.</p></a><a class="tl" href="fabric-maintenance.html"><h3>Fabric maintenance</h3><p>Maintenance solutions that keep your equipment performing at peak reliability.</p></a></div></div></section>
+
 <section id="equipment" class="alt">
 <div class="wrap">
 <h2>Plant and equipment</h2>
@@ -182,12 +205,12 @@ footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
 <p>Our technical people cover the full chain from surface preparation to inspection and training.</p>
 </div>
 <ul class="plain" style="columns:2;column-gap:2rem">
-<li>Project supervision</li><li>Coating inspector</li><li>Team manager</li><li>Corrosion mapping</li><li>Surface preparation expert</li><li>Coating application</li><li>Industrial coating instructor</li><li>Purchasing agent</li><li>Blasting and coating equipment repairs</li><li>Rope access level 1</li>
+<li>Project supervision</li><li>Coating inspector</li><li>Team manager</li><li>Corrosion mapping</li><li>Surface preparation expert</li><li>Coating application</li><li>Industrial coating instruction</li><li>Inspection and QA</li>
 </ul>
 </div>
 <div class="wrap" style="margin-top:3rem">
 <h3 style="color:var(--teal)">Our team</h3>
-<ul class="team hs" aria-label="Our team" style="margin-top:.8rem"><li>CEO</li><li>Managing director</li><li>Operations manager</li><li>Procurement and logistics lead</li><li>Project engineer</li><li>Technicians</li><li>Administrator</li><li>Accounts and HR</li></ul>
+<ul class="team hs" aria-label="Our team" style="margin-top:.8rem"><li>CEO</li><li>Managing director</li><li>Operations manager</li><li>Procurement and logistics lead</li><li>Project engineer</li><li>Site supervisors</li></ul>
 </div>
 </section>
 
@@ -196,7 +219,7 @@ footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
 <div><h2>Safety is everyone's responsibility</h2></div>
 <div>
 <p>We have built a safety culture our employees understand. We pledge to protect our workforce, the environment, company resources and every client we work for.</p>
-<p>Comprehensive safety procedures protect clients, employees and the environment. Risk assessment and risk controls are part of our day-to-day activities, and we comply with the safety standards our clients set so every project meets safety at work regulations.</p>
+<p>Comprehensive safety procedures protect clients, employees and the environment. Risk assessment and risk controls are part of our day-to-day activities, and we comply with the safety standards expected by our clients and regulators.</p>
 </div>
 </div>
 </section>
@@ -218,7 +241,7 @@ footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
 <div class="wrap">
 <h2>Companies we work with</h2>
 <p>We have worked across the country, so mobilization is not a problem for us.</p>
-<div class="hs hs-logos" aria-label="Companies we have worked with"><div class="tile"><img src="assets/clients/zeal.png" alt="Zeal Environmental Technologies" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/saipem.png" alt="Saipem" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/southey.png" alt="Southey Contracting" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/yinson.png" alt="Yinson" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/conship.png" alt="Conship, Consolidated Shipping Agencies Ltd" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/amalitech.png" alt="Amalitech" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/metka.png" alt="Metka" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/expro.png" alt="Expro" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/northbrook.png" alt="Northbrook" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/ghana-gas.png" alt="Ghana Gas" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/cypress-energy.png" alt="Cypress Energy" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/noble.png" alt="Noble" loading="lazy" draggable="false"></div></div>
+<div class="hs hs-logos" aria-label="Companies we have worked with"><div class="tile"><img src="assets/clients/zeal.png" alt="Zeal Environmental Technologies" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/ghana-navy.png" alt="Ghana Navy" loading="lazy" draggable="false"></div><div class="tile"><img src="assets/clients/saipem.png" alt="Saipem" loading="lazy" draggable="false"></div></div>
 </div>
 </section>
 
@@ -236,6 +259,6 @@ footer{background:#08302f;color:#a9c4c1;padding:1.5rem 0;font-size:.9rem}
 </div>
 </section>
 </main>
-<footer><div class="wrap"><div class="foot-cols"><div><b>Company</b><a href="index.html">Home</a><a href="about.html">About</a><a href="safety.html">Safety</a><a href="our-works.html">Our Works</a></div><div><b>Services</b><a href="services.html">All services</a><a href="procurement.html">Procurement</a><a href="fabric-maintenance.html">Fabric Maintenance</a><a href="equipment.html">Equipment</a></div><div><b>Contact</b><a href="tel:+233596641418">+233 59 664 1418</a><a href="mailto:operations@eddnarkgh.com">operations@eddnarkgh.com</a></div></div>&copy; 2026 Eddnark Company Limited. Takoradi, Ghana.</div></footer>
+<footer><div class="wrap"><div class="foot-cols"><div><b>Company</b><a href="index.html">Home</a><a href="about.html">About</a><a href="safety.html">Safety</a><a href="our-works.html">Our Works</a></div><div><b>Services</b><a href="services.html">Engineering</a><a href="procurement.html">Procurement</a><a href="equipment.html">Plant &amp; Equipment</a></div><div><b>Contact</b><a href="tel:+233596641418">+233 59 664 1418</a><a href="mailto:operations@eddnarkgh.com">operations@eddnarkgh.com</a></div></div><p>© 2025 Eddnark Company Limited. All rights reserved.</p></div></footer>
 <script src="site.js" defer></script></body>
 </html>
